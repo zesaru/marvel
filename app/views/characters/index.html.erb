@@ -1,0 +1,11 @@
+<div class="container">
+    <h3>FEATURED CHARACTERS</h3>
+    <div class="cards">
+    <% @characters.each do |character| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+             url('<%= cl_image_path character.photo, height: 200, width: 200, crop: :fill %>')">
+        <%= character.name %>
+      </div>
+      <% end %>
+    </div>
+</div>

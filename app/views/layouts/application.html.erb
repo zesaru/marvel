@@ -10,7 +10,14 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://terrigen-cdn-dev.marvel.com/content/prod/1x/characters_art_mas_dsk_01.jpg);">
+      <div class="container">
+        <h1>MARVEL CHARACTERS !</h1>
+        <p>GET HOOKED ON A HEARTY HELPING OF HEROES AND VILLAINS FROM THE HUMBLE HOUSE OF IDEAS!</p>
+      </div>
+    </div>
     <%= yield %>
+
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>
