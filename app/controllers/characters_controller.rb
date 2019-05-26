@@ -9,6 +9,7 @@ class CharactersController < ApplicationController
   end
 
   def show
+    @powers = Power.where(character_id: params[:id])
   end
 
   def new

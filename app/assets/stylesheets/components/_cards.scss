@@ -18,7 +18,9 @@
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
-
+.card-category:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {

@@ -1,2 +1,14 @@
-<h1>Characters#show</h1>
-<p>Find me in app/views/characters/show.html.erb</p>
+<div class="container">
+  <div class="row">
+    <p></p>
+    <div class="col-6">
+    <h3><%= @character.name %></h3>
+    <%= cl_image_tag @character.photo, height: 300, width: 400, crop: :fill %>
+    </div>
+    <div class="col-6 justify-content-center">
+        <% @powers.each do |power| %>
+            <h5><span class="badge badge-danger"><%= power.description %></span></h5>
+        <% end %>
+    </div>
+  </div>
+</div>
